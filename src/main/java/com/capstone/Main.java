@@ -67,9 +67,7 @@ public class Main {
 
             System.out.printf("""
                     Total signing time of %d messages: %d nanoseconds
-                    Total verifying time of %d signatures:\
-                     %d nanoseconds
-                    
+                    Total verifying time of %d signatures: %d nanoseconds
                     """,size, sumSign,size,sumVerify);
         }
     }
