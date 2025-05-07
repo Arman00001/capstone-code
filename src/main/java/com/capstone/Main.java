@@ -65,8 +65,12 @@ public class Main {
             long averageVerify = sumVerify/size;
             System.out.printf("Average verifying time: %d nanoseconds\n\n",averageVerify);
 
-            System.out.printf("Total signing time of %d messages: %d nanoseconds\nTotal verifying time of %d signatures:" +
-                    " %d nanoseconds\n\n",size, sumSign,size,sumVerify);
+            System.out.printf("""
+                    Total signing time of %d messages: %d nanoseconds
+                    Total verifying time of %d signatures:\
+                     %d nanoseconds
+                    
+                    """,size, sumSign,size,sumVerify);
         }
     }
 }
